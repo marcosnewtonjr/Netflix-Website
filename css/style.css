@@ -18,8 +18,12 @@
 
 body {
     background-color: var(--black);
-    background: url(../images/background-top.jpg);
+    background-image: url(../images/background-top.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    font-family: 'Martel Sans', sans-serif;
 }
 
 header {
@@ -39,7 +43,6 @@ img#logo-netflix {
     display: flex;
     list-style-type: none;
     font-size: 14px;
-    font-family: 'Martel Sans', sans-serif;
 }
 
 .menu {
@@ -58,7 +61,7 @@ nav#menu-secundario {
     margin-left: auto;   
 }
 
-.fa-solid {
+header .fa-solid {
     margin-right: 20px;
 }
 
@@ -68,4 +71,53 @@ nav#menu-secundario {
     height: 32px;
     margin-right: 5px;
     border-radius: 3px;
+}
+
+#info-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 60px;
+    max-width: 500px;
+    height: 500px;
+}
+
+h2.titulo {
+    color: var(--text);
+    margin: 20px 0px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
+    font-weight: bold;
+}
+
+h3.descrição {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
+    font-weight: 400;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 1.4em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+button.assistir {
+    color: var(--black);
+    background-color: var(--text);
+}
+
+button.informações {
+    color: white;
+    background-color: rgba(109, 109, 110, 0.6);
+}
+
+button.assistir:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+button.informações:hover {
+    background-color: rgba(109, 109, 110, 0.4);
 }
