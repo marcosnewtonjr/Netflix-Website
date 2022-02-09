@@ -1,0 +1,71 @@
+/* Criando variáveis */
+
+:root {
+    --red: #D7262D;
+    --black: #141414;
+    --text: #e5e5e5;
+}
+
+/* Resetando o CSS */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;600;700&display=swap');
+
+body {
+    background-color: var(--black);
+    background: url(../images/background-top.jpg);
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    height: 68px;
+    align-items: center;
+    padding: 0 60px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0));
+}
+
+img#logo-netflix {
+    width: 92.5px;
+    margin-right: 25px;
+}
+
+#menu-primario {
+    display: flex;
+    list-style-type: none;
+    font-size: 14px;
+    font-family: 'Martel Sans', sans-serif;
+}
+
+.menu {
+    color: var(--text);
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.4s;
+}
+.menu:hover {
+    color: #b3b3b3;
+}
+
+nav#menu-secundario {
+    display: flex;
+    align-items: center;
+    margin-left: auto;   
+}
+
+.fa-solid {
+    margin-right: 20px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    margin-right: 5px;
+    border-radius: 3px;
+}
