@@ -1,4 +1,3 @@
-console.log('Hello World')
 const header = document.querySelector('#header');
 window.onscroll = function() {
     let top = window.scrollY;
