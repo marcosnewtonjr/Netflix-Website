@@ -201,10 +201,9 @@ button.informações:hover {
   }
 
   footer {
-      height: 250px;
+      height: 260px;
       width: 1100px;
-      background-color: aqua;
-      margin-top: -200px;
+      margin-top: -250px;
       margin-left: auto;
       margin-right: auto;
       padding: 20px 75px 0px 75px;
@@ -213,6 +212,7 @@ button.informações:hover {
   .opções {
       display: flex;
       justify-content: space-between;
+      margin-bottom: 15px;
   }
 
   .social {
@@ -221,4 +221,39 @@ button.informações:hover {
 
   .fa-brands{
       margin-right: 10px;
+  }
+
+  .bar {
+      list-style-type: none;
+  }
+
+  .bar-li {
+      margin-bottom: 10px;
+      font-size: 13px;
+      color: gray;
+      cursor: pointer;
+      transition: 0.5s ease all;
+  }
+
+  .bar-li:hover {
+    text-decoration: underline;
+    transition: 0.5s ease all;
+  }
+
+  .codigo {
+      padding: 6.5px;
+      color: gray;
+      background-color: rgba(0, 0, 0, 0);
+      border: solid 1px gray;
+      margin-bottom: 20px;
+      cursor: pointer;
+  }
+
+  .codigo:hover {
+      color: white;
+  }
+
+  footer > p {
+      color: gray;
+      font-size: 12px;
   }
