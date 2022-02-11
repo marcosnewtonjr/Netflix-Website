@@ -2,7 +2,7 @@
 
 #header {
     width: 100vw;
-    height: 1000px;
+    height: 68px;
     background-color: red;
 }
 
@@ -56,4 +56,25 @@
     height: 68px;
     margin-left: auto;
     background-color: chartreuse;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header #head .user .user-menu {
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#header #head .user .user-menu img {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+}
+
+#header #head .user .user-menu .down-arrow {
+    width: 15px;
+    height: auto;
 }
