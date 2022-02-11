@@ -88,6 +88,14 @@ header .fa-solid {
     text-decoration: none;
 }
 
+.arrow {
+    transition: all 0.3s ease;
+}
+
+.user:hover .arrow {
+    transform: rotate(180deg);
+}
+
 #info-background {
     position: relative;
     top: 75px;
@@ -256,4 +264,72 @@ button.informações:hover {
   footer > p {
       color: gray;
       font-size: 12px;
+  }
+
+  .htmlCssSubMenu {
+      position: absolute;
+      width: 170px;
+      height: 220px;
+      top: 50px;
+      right: 85px;
+      display: none;
+  }
+
+  .user:hover .htmlCssSubMenu {
+      display: block; 
+  }
+
+  .sub-menu {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-around;
+      position: absolute;
+      top: 20px;
+      right: 0px;
+      list-style: none;
+      background: rgba(0, 0, 0, 0.9);
+      width: 170px;
+      height: auto;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.438);
+      z-index: 1;      
+  }
+
+  .sub-menu li a {
+      color: white;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px 10px 20px;
+      text-decoration: none;
+  }
+
+  span:hover{
+      text-decoration: underline;
+  }
+
+  .cursorq {
+      cursor: pointer;
+  }
+
+  .fa-regular {
+      width: 32px;
+      text-align: center;
+      margin-right: 5px;
+  }
+
+  .corte {
+      border-bottom: solid 1px rgba(128, 128, 128, 0.5);
+      width: 100%;
+    
+  }
+
+  .detalhe-sub-menu {
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background-color: var(--text);
+      transform: rotate(45deg);
+      top: 13px;
+      right: 25px
   }
