@@ -13,4 +13,6 @@
 :root {
     --texto: rgb(215, 217, 218);
     --textoHover: rgb(255, 255, 255);
+    --dark: rgb(20, 20, 20);
+    --darkTransparent: rgba(20, 20, 20, 0.9);
 }

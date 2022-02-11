@@ -84,3 +84,53 @@
     width: 15px;
     height: auto;
 }
+
+/* Desenvolvimento do menu suspenso para usuários */
+
+#header #head .user .user-menu .user-menu-box {
+    position: absolute;
+    top: 68px;
+    right: 60px;
+    width: 180px;
+    height: 370px;
+    background-color: blueviolet;
+    z-index: 0;
+}
+
+#header #head .user .user-menu .up-arrow {
+    position: absolute;
+    top: -12px;
+    right: 30px;
+    width: 22px;
+    height: auto;
+}
+
+#header #head .user .user-menu .user-menu-profile {
+    width: 180px;
+    height: 230px;
+    background-color: var(--darkTransparent);
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    z-index: 1;
+}
+
+#header #head .user .user-menu .user-menu-settings {
+    width: 180px;
+    height: 88px;
+    background-color: red;
+    position: absolute;
+    top: 235px;
+    right: 0px;
+    z-index: 1;
+}
+
+#header #head .user .user-menu .user-menu-exit {
+    width: 180px;
+    height: 47px;
+    background-color: green;
+    position: absolute;
+    top: 323px;
+    right: 0px;
+    z-index: 1;
+}
