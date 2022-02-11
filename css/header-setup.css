@@ -1,0 +1,32 @@
+#header {
+    width: 100vw;
+    height: 800px;
+    background-color: red;
+}
+
+#header #head {
+    width: auto;
+    height: 68px;
+    background-color: blue;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#header #head .logo {
+    width: 92.5px;
+    height: 25px;
+    margin-right: 25px;
+    background-color: green;
+}
+
+#header #head .nav {
+    width: 360px;
+    height: 17px;
+    background-color: blueviolet;
+}
+
+#header #head .user {
+    width: 150px;
+    height: 68px;
+    background-color: chartreuse;
+}
