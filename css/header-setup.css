@@ -78,6 +78,7 @@
     width: 32px;
     height: 32px;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 #header #head .user .user-menu .down-arrow {
@@ -113,6 +114,34 @@
     top: 5px;
     right: 0px;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#header #head .user .user-menu .user-menu-profile .edit {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+#header #head .user .user-menu .user-menu-profile li{
+    padding: 5px 0px;
+    display: flex;
+    align-items: center;
+}
+
+#header #head .user .user-menu .user-menu-profile li a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;  
+    font-weight: 400;
+    color: var(--texto);
+    padding-left: 10px;
+}
+
+#header #head .user .user-menu .user-menu-profile li a:hover {
+    text-decoration: underline;
 }
 
 #header #head .user .user-menu .user-menu-settings {
