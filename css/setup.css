@@ -8,6 +8,8 @@
     list-style: none;
 }
 
-/* Importação de fontes Google Fonts */
+/* Paleta de Cores */
 
-@import url('https://fonts.googleapis.com/css2?family=Signika:wght@400;700&display=swap');
+:root {
+    --texto: rgb(215, 217, 218);
+}

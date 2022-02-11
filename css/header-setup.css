@@ -1,10 +1,15 @@
+/* Desenvolvimento do Cabeçalho */
+
 #header {
     width: 100vw;
-    height: 800px;
+    height: 1000px;
     background-color: red;
 }
 
 #header #head {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     width: auto;
     height: 68px;
     background-color: blue;
@@ -19,14 +24,36 @@
     background-color: green;
 }
 
+#header #head .logo img {
+    width: 92.5px;
+    height: 25px;
+    cursor: pointer;
+}
+
 #header #head .nav {
     width: 360px;
     height: 17px;
     background-color: blueviolet;
 }
 
+#header #head .nav .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#header #head .nav .nav-bar li {
+    font-family: 'Signika', sans-serif;
+    font-size: 14px;  
+}
+
+#header #head .nav .nav-bar li a {
+    color: var(--texto);
+}
+
 #header #head .user {
     width: 150px;
     height: 68px;
+    margin-left: auto;
     background-color: chartreuse;
 }
