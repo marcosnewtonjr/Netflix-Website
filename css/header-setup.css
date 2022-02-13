@@ -233,16 +233,20 @@
 
 #header #head .user .alert .alert-menu-box {
     width: 400px;
-    height: 205px;
-    background-color: red;
+    height: 229px;
     position: absolute;
-    top: 68px;
-    right: 140px;
+    top: 44px;
+    right: 141px;
+    display: none;
+}
+
+#header #head .user .alert:hover .alert-menu-box{
+    display: block;
 }
 
 #header #head .user .alert .alert-menu-box .up-arrow {
     position: absolute;
-    top: -12px;
+    top: 12px;
     right: 1px;
 }
 
@@ -251,7 +255,7 @@
     height: 200px;
     overflow: auto;
     position: absolute;
-    top: 5px;
+    top: 29px;
     z-index: 1;
     background-color: var(--darkTransparent);
     border: solid 1px rgba(255, 255, 255, 0.5);
