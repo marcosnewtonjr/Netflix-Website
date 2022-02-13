@@ -224,3 +224,24 @@
 #header #head .user .user-menu .user-menu-exit a:hover {
     text-decoration: underline;
 }
+
+/* Desenvolvimento do menu suspenso de alerta */
+
+#header #head .user .alert .bell {
+    cursor: pointer;
+}
+
+#header #head .user .alert .alert-menu-box {
+    width: 400px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+    top: 68px;
+    right: 140px;
+}
+
+#header #head .user .alert .alert-menu-box .up-arrow {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
