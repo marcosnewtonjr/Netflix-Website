@@ -6,28 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #teste {
-            width: 250px;
-            height: 100px;
-            background-color: aquamarine;
-            overflow: auto;
+        body {
+            background-color: darkblue;
         }
 
-        #teste option {
-            color: darkblue;
-            display: flex;
+        .teste {
+            width: 100px;
+            height: 100px;
+            background-color: azure;
+            transition-property: width;
+            transition-duration: .5s;
+            transition-timing-function: linear;
         }
+
+        .search:hover + .teste {
+            width: 300px;
+        }
+
     </style>
 </head>
 <body>
-    <div id="teste">
-        <img src="images/alert-img-01.jpg" alt="">
-        <p>Valor 02</p>
-        <p>Valor 02</p>
-        <p>Valor 02</p>
-        <p>Valor 02</p>
-        <p>Valor 02</p>
-        <p>Valor 02</p>
-    </div>
+    <box-icon class="search" name='search' color='#ffffff' ></box-icon>
+    <div class="teste"></div>
+    
+
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+    
 </body>
 </html>

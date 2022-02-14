@@ -35,7 +35,20 @@
                 </ul>
             </section>
             <section class="user">
-                <box-icon class="search" name='search' color='#ffffff' ></box-icon>
+
+            <!-- ====== Desenvolvimento da barra de pesquisa suspensa ====== -->
+            
+                <section class="search">
+                    <div class="search-box">
+                        <div class="search-icon-box">
+                            <box-icon class="search-icon" name='search' color='#ffffff' ></box-icon>
+                        </div>
+                        <div class="search-input-box">
+                            <input type="text" id="search-box" placeholder="Filmes, gente e gêneros">
+                        </div>
+                    </div>
+                </section>
+                
                 
                 <!-- ====== Desenvolvimento do menu suspenso de alerta ====== -->
 
@@ -123,5 +136,6 @@
     
     <!-- ====== Importação de Script's (Open) ====== -->
     <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+    <script src="../js/search.js"></script>
 </body>
 </html>

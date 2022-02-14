@@ -58,7 +58,7 @@
 }
 
 #header #head .user {
-    width: 150px;
+    width: 385px;
     height: 68px;
     margin-left: auto;
     background-color: chartreuse;
@@ -302,18 +302,79 @@
 
 #header #head .user .alert .alert-menu-box #alert-menu .option-alert-menu .alert-menu-container .alert-menu-container-alerta {
     color: var(--texto);
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     line-height: 1.5;
 }
 
 #header #head .user .alert .alert-menu-box #alert-menu .option-alert-menu .alert-menu-container .alert-menu-container-nome {
     color: var(--texto);
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     line-height: 1.5;
 }
 
 #header #head .user .alert .alert-menu-box #alert-menu .option-alert-menu .alert-menu-container .alert-menu-container-tempo {
     color: gray;
+    font-family: 'Roboto', sans-serif;
     font-size: 12px;
     line-height: 1.5;
-    }
+}
+
+/* Desenvolvimento da barra de pesquisa suspensa */
+
+#header #head .search {
+    width: 270px;
+    height: 68px;
+    background-color: rgba(255, 127, 80, 0.527);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#header #head .search .search-box {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    transition: width 0.3s ease;
+}
+
+#header #head .search .search-box.active {
+    width: 270px;
+    border: solid 1px white;
+    background-color: var(--darkTransparent);
+}
+
+#header #head .search .search-icon-box {
+    min-width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header #head .search .search-icon-box .search-icon {
+    cursor: pointer;
+}
+
+#header #head .search .search-input-box {
+    width: 235px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header #head .search .search-input-box #search-box {
+    width: 235px;
+    height: 30px;
+    background-color: var(--darkTransparent);
+    color: var(--texto);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    border: none;
+    outline: none;
+}
