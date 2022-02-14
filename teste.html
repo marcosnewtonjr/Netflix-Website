@@ -8,29 +8,53 @@
     <style>
         body {
             background-color: darkblue;
+            width: 100%;
+            height: 100vh;
         }
 
-        .teste {
+        #search {
+            cursor: pointer;
+        }
+
+        #teste {
             width: 100px;
             height: 100px;
             background-color: azure;
             transition-property: width;
-            transition-duration: .5s;
+            transition-duration: .3s;
             transition-timing-function: linear;
-        }
-
-        .search:hover + .teste {
-            width: 300px;
         }
 
     </style>
 </head>
 <body>
-    <box-icon class="search" name='search' color='#ffffff' ></box-icon>
-    <div class="teste"></div>
+    <box-icon id="search" name='search' color='#ffffff' ></box-icon>
+    <div id="teste"></div>
     
 
     <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+    <script>
+        const teste = document.querySelector('#teste')
+        const botao = document.querySelector('#search')
+        const body = document.querySelector('body')
+        
+        botao.onclick = function() {
+            if(teste.style.width == '100px') {
+                teste.style.width = '300px'
+            } else {
+                teste.style.width = '100px'
+            }
+        }
+
+        body.onclick = function(elemento) {
+            if(elemento.target == body) {
+                teste.style.width = '100px'
+            }
+        }
+
+
+
+    </script>
     
 </body>
 </html>

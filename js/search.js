@@ -1,18 +1,35 @@
-let icon = document.querySelector('.search-icon')
-let box = document.querySelector('.search-box')
-let foco = document.querySelector('#search-box')
-let clear = document.querySelector('.clear-icon')
-let close = document.querySelector('.search-closed')
 
-icon.onclick = function() {
-    box.classList.toggle('active')
-    foco.focus()
-    foco.value = ''
+let iconSearch = document.querySelector('.search-icon-box')
+let iconClear = document.querySelector('.clear-icon')
+let box = document.querySelector('.search-box')
+let search = document.querySelector('#search-box')
+let header = document.querySelector('#header')
+
+iconSearch.onclick = function() {
+    if (box.style.width == '35px') {
+        box.style.width = '270px'
+        box.style.border = 'solid 1px white'
+        box.style.backgroundColor = 'var(--darkTransparent)'
+        search.focus()
+        if(search.value.length == 0) {
+            iconClear.style.display = 'none'
+        }
+    } else {
+        box.style.width = '35px'
+        box.style.border = ''
+        box.style.backgroundColor = ''
+        search.value = ''
+    }
 }
 
-clear.onclick = function() {
-    if (foco.value.length > 0) {
-        foco.value = ''
-        foco.focus()
+iconClear.onclick = function() {
+    search.value = ''
+}
+
+window.onclick = function(e) {
+    if (e.target == header) {
+        box.style.width = '35px'
+        box.style.border = ''
+        box.style.backgroundColor = ''
     }
 }
