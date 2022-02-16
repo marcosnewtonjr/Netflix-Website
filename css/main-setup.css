@@ -109,6 +109,7 @@
 
 .carrossel {
     background-color: var(--dark);
+    width: 100vw;
 }
 
 .carrossel .title-carrossel {

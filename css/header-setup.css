@@ -92,7 +92,7 @@
 #header #head .user .user-menu .user-menu-box {
     position: absolute;
     top: 68px;
-    right: 60px;
+    right: 48px;
     width: 180px;
     height: 370px;
     z-index: 0;
@@ -231,7 +231,7 @@
     height: 229px;
     position: absolute;
     top: 44px;
-    right: 141px;
+    right: 122px;
     display: none;
 }
 
