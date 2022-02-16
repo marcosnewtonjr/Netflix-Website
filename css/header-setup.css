@@ -337,12 +337,6 @@
     z-index: 1;
 }
 
-/*#header #head .search .search-box.active {
-    width: 270px;
-    border: solid 1px white;
-    background-color: var(--darkTransparent);
-}*/
-
 #header #head .search .search-icon-box {
     min-width: 35px;
     height: 35px;
@@ -384,5 +378,5 @@
 
 #header #head .search .search-clear .clear-icon {
     cursor: pointer;
-    display: block;
+    display: none;
 }
