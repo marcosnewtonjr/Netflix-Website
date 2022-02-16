@@ -12,7 +12,11 @@
     <!-- ====== Importação de fontes Google Fonts ====== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- ====== Importação do Swiper para o carrossel ====== -->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 
     <!-- ====== Importação de CSS ====== -->
     <link rel="stylesheet" href="../css/setup.css">
@@ -144,7 +148,7 @@
 
         <section class="background">
             <div class="background-image">
-                <img src="..//images/background-top-sombra.png" alt="">
+                <img src="..//images/background-top-shadow.png" alt="">
             </div>
             <div class="box-banner">
                 <img class="banner" src="../images/tilte-background-top.png" alt="">
@@ -164,10 +168,27 @@
         <!-- ====== Desenvolvimento do carrossel de filmes ====== -->
 
         <section class="carrossel">
-            <div class="title-carrossel">
+            <div class="title-carrossel-topo">
                 <h2>Populares na Netflix</h2>
             </div>
-
+            <div class="swiper swiper-topo">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../images/Filme-01.jpg" alt="" class="filme"></div>
+                    <div class="swiper-slide"><img src="../images/Filme-02.jpg" alt="" class="filme"></div>
+                    <div class="swiper-slide"><img src="../images/Filme-03.jpg" alt="" class="filme"></div>
+                    <div class="swiper-slide"><img src="../images/Filme-04.jpg" alt="" class="filme"></div>
+                    <div class="swiper-slide"><img src="../images/Filme-05.jpg" alt="" class="filme"></div>
+                    <div class="swiper-slide"><img src="../images/Filme-06.jpg" alt="" class="filme"></div>
+                    <div class="swiper-slide"><img src="../images/Filme-07.jpg" alt="" class="filme"></div>
+                    <div class="swiper-slide"><img src="../images/Filme-08.jpg" alt="" class="filme"></div>
+                    <div class="swiper-slide"><img src="../images/Filme-09.jpg" alt="" class="filme"></div>
+                    <div class="swiper-slide"><img src="../images/Filme-10.jpg" alt="" class="filme"></div>
+                    <div class="swiper-slide"><img src="../images/Filme-11.jpg" alt="" class="filme"></div>
+                    <div class="swiper-slide"><img src="../images/Filme-12.jpg" alt="" class="filme"></div>
+                </div>
+                <div class="swiper-button-prev" style="color: white;"></div>
+                <div class="swiper-button-next" style="color: white;"></div>
+            </div>
 
 
 
@@ -180,5 +201,7 @@
     <!-- ====== Importação de Script's (Open) ====== -->
     <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
     <script src="../js/search.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../js/swiper.js"></script>
 </body>
 </html>
