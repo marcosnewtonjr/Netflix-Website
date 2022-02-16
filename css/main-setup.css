@@ -109,10 +109,9 @@
 
 .carrossel {
     background-color: var(--dark);
-    height: 700px;
 }
 
-.carrossel .title-carrossel-topo {
+.carrossel .title-carrossel {
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
     font-family: 'Roboto', sans-serif;
